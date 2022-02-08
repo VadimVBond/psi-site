@@ -1,84 +1,49 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>полный адаптивный дизайн сайта кофе</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>complete responsive christmas website design tutorial</title>
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-    
+
 <!-- header section starts  -->
 
 <header class="header">
 
-    <a href="#" class="logo">
-        <img src="images/logo.webp" alt="logo">
-    </a>
+   <a href="#" class="logo">Christmas</a>
 
-    <nav class="navbar">
-        <a href="#home">Старт</a>
-        <a href="#about">О нас</a>
-        <a href="#menu">Меню</a>
-        <a href="#products">Продукты</a>
-        <a href="#review">Обзор</a>
-        <a href="#contact">Контакт</a>
-        <a href="#blogs">Блог</a>
-    </nav>
+   <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#about">about</a>
+      <a href="#products">products</a>
+      <a href="#services">services</a>
+      <a href="#gallery">gallery</a>
+      <a href="#contact">contact</a>
+      <a href="#blogs">blogs</a>
+   </nav>
 
-    <div class="icons">
-        <div class="fas fa-search" id="search-btn"></div>
-        <div class="fas fa-shopping-cart" id="cart-btn"></div>
-        <div class="fas fa-bars" id="menu-btn"></div>
-    </div>
+   <div class="icons">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <div id="search-btn" class="fas fa-search"></div>
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-shopping-cart"></a>
+   </div>
 
-    <div class="search-form">
-        <input type="search" id="search-box" placeholder="search here...">
-        <label for="search-box" class="fas fa-search"></label>
-    </div>
-
-    <div class="cart-items-container">
-        <div class="cart-item">
-            <span class="fas fa-times"></span>
-            <img src="images/cart-item-1.webp" alt="cart" width="165" height="189">
-            <div class="content">
-                <h3>товар в корзине 01</h3>
-                <div class="price">$15.99/-</div>
-            </div>
-        </div>
-        <div class="cart-item">
-            <span class="fas fa-times"></span>
-            <img src="images/cart-item-2.webp" alt="" width="165" height="189">
-            <div class="content">
-                <h3>товар в корзине 02</h3>
-                <div class="price">$15.99/-</div>
-            </div>
-        </div>
-        <div class="cart-item">
-            <span class="fas fa-times"></span>
-            <img src="images/cart-item-3.webp" alt="" width="165" height="189">
-            <div class="content">
-                <h3>товар в корзине 03</h3>
-                <div class="price">$15.99/-</div>
-            </div>
-        </div>
-        <div class="cart-item">
-            <span class="fas fa-times"></span>
-            <img src="images/cart-item-4.webp" alt="" width="165" height="189">
-            <div class="content">
-                <h3>товар в корзине 04</h3>
-                <div class="price">$15.99/-</div>
-            </div>
-        </div>
-        <a href="#" class="btn">оформить заказ</a>
-    </div>
+   <form action="" class="search-form">
+      <input type="search" name="" placeholder="search here..." id="search-box">
+      <label for="search-box" class="fas fa-search"></label>
+   </form>
 
 </header>
 
@@ -88,11 +53,16 @@
 
 <section class="home" id="home">
 
-    <div class="content">
-        <h3>свежий кофе по утрам</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat labore, sint cupiditate distinctio tempora reiciendis.</p>
-        <a href="#" class="btn">получить сейчас</a>
-    </div>
+   <div class="content">
+      <p>we wish you a</p>
+      <h3>merry christmas</h3>
+   </div>
+
+   <img src="images/trees.png" class="tree" alt="">
+   <img src="images/mountains.png" class="mountain" alt="">
+   <img src="images/moon.png" class="moon" alt="">
+   <img src="images/cloud.png" class="cloud-1" alt="">
+   <img src="images/cloud.png" class="cloud-2" alt="">
 
 </section>
 
@@ -102,321 +72,367 @@
 
 <section class="about" id="about">
 
-    <h1 class="heading"> <span>О</span> Нас </h1>
+   <div class="image" data-aos="fade-right" data-aos-delay="150">
+      <img src="images/about-img.png" alt="">
+   </div>
 
-    <div class="row">
-
-        <div class="image">
-            <img src="images/about-img.webp" alt="" width="100%">
-        </div>
-
-        <div class="content">
-            <h3>что делает наш кофе особенным?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui ea ullam, enim tempora ipsum fuga alias quae ratione a officiis id temporibus autem? Quod nemo facilis cupiditate. Ex, vel?</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit amet enim quod veritatis, nihil voluptas culpa! Neque consectetur obcaecati sapiente?</p>
-            <a href="#" class="btn">подробнее</a>
-        </div>
-
-    </div>
+   <div class="content" data-aos="fade-left" data-aos-delay="300">
+      <span>why choose us?</span>
+      <h3>celebrate your christmas with us</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur omnis magnam, labore quidem assumenda unde aliquam quasi ipsa? Saepe voluptatum, magnam mollitia aperiam laborum eaque in nam eos reiciendis corporis!</p>
+      <a href="#" class="btn">read more</a>
+   </div>
 
 </section>
 
 <!-- about section ends -->
 
-<!-- menu section starts  -->
-
-<section class="menu" id="menu">
-
-    <h1 class="heading"> Наше <span>Меню</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="images/menu-1.webp" alt="" width="80" height="80">
-            <h3>вкусно и полезно</h3>
-            <div class="price">$15.99 <span>20.99</span></div>
-            <a href="#" class="btn">добавить в корзину</a>
-        </div>
-
-        <div class="box">
-            <img src="images/menu-2.webp" alt="" width="80" height="80">
-            <h3>tasty and healty</h3>
-            <div class="price">$15.99 <span>20.99</span></div>
-            <a href="#" class="btn">добавить в корзину</a>
-        </div>
-
-        <div class="box">
-            <img src="images/menu-3.webp" alt="" width="80" height="80">
-            <h3>tasty and healty</h3>
-            <div class="price">$15.99 <span>20.99</span></div>
-            <a href="#" class="btn">добавить в корзину</a>
-        </div>
-
-        <div class="box">
-            <img src="images/menu-4.webp" alt="" width="80" height="80">
-            <h3>tasty and healty</h3>
-            <div class="price">$15.99 <span>20.99</span></div>
-            <a href="#" class="btn">добавить в корзину</a>
-        </div>
-
-        <div class="box">
-            <img src="images/menu-5.webp" alt="" width="80" height="80">
-            <h3>tasty and healty</h3>
-            <div class="price">$15.99 <span>20.99</span></div>
-            <a href="#" class="btn">добавить в корзину</a>
-        </div>
-
-        <div class="box">
-            <img src="images/menu-6.webp" alt="" width="80" height="80">
-            <h3>tasty and healty</h3>
-            <div class="price">$15.99 <span>20.99</span></div>
-            <a href="#" class="btn">добавить в корзину</a>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- menu section ends -->
+<!-- products section starts  -->
 
 <section class="products" id="products">
 
-    <h1 class="heading"> our <span>products</span> </h1>
+   <h1 class="heading"> our <span>products</span> </h1>
 
-    <div class="box-container">
+   <div class="box-container">
 
-        <div class="box">
+      <div class="box" data-aos="fade-up" data-aos-delay="150">
+         <div class="image">
+            <img src="images/product-1.png" alt="">
             <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
+               <a href="#" class="fas fa-shopping-cart"></a>
+               <a href="#" class="fas fa-heart"></a>
+               <a href="#" class="fas fa-search"></a>
             </div>
-            <div class="image">
-                <img src="images/product-1.webp" alt="" width="127" height="200">
+         </div>
+         <div class="content">
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
             </div>
-            <div class="content">
-                <h3>свежий кофе</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="price">$15.99 <span>$20.99</span></div>
-            </div>
-        </div>
+            <h3>christmas decor</h3>
+            <div class="price">$29.99 <span>$39.99</span></div>
+         </div>
+      </div>
 
-        <div class="box">
+      <div class="box" data-aos="fade-up" data-aos-delay="300">
+         <div class="image">
+            <img src="images/product-2.png" alt="">
             <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
+               <a href="#" class="fas fa-shopping-cart"></a>
+               <a href="#" class="fas fa-heart"></a>
+               <a href="#" class="fas fa-search"></a>
             </div>
-            <div class="image">
-                <img src="images/product-2.webp" alt="" width="127" height="200">
+         </div>
+         <div class="content">
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
             </div>
-            <div class="content">
-                <h3>свежий кофе</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="price">$15.99 <span>$20.99</span></div>
-            </div>
-        </div>
+            <h3>christmas decor</h3>
+            <div class="price">$29.99 <span>$39.99</span></div>
+         </div>
+      </div>
 
-        <div class="box">
+      <div class="box" data-aos="fade-up" data-aos-delay="450">
+         <div class="image">
+            <img src="images/product-3.png" alt="">
             <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
+               <a href="#" class="fas fa-shopping-cart"></a>
+               <a href="#" class="fas fa-heart"></a>
+               <a href="#" class="fas fa-search"></a>
             </div>
-            <div class="image">
-                <img src="images/product-3.webp" alt="" width="127" height="200">
+         </div>
+         <div class="content">
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
             </div>
-            <div class="content">
-                <h3>свежий кофе</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="price">$15.99 <span>$20.99</span></div>
-            </div>
-        </div>
+            <h3>christmas decor</h3>
+            <div class="price">$29.99 <span>$39.99</span></div>
+         </div>
+      </div>
 
-    </div>
+      <div class="box" data-aos="fade-up" data-aos-delay="600">
+         <div class="image">
+            <img src="images/product-4.png" alt="">
+            <div class="icons">
+               <a href="#" class="fas fa-shopping-cart"></a>
+               <a href="#" class="fas fa-heart"></a>
+               <a href="#" class="fas fa-search"></a>
+            </div>
+         </div>
+         <div class="content">
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>christmas decor</h3>
+            <div class="price">$29.99 <span>$39.99</span></div>
+         </div>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="750">
+         <div class="image">
+            <img src="images/product-5.png" alt="">
+            <div class="icons">
+               <a href="#" class="fas fa-shopping-cart"></a>
+               <a href="#" class="fas fa-heart"></a>
+               <a href="#" class="fas fa-search"></a>
+            </div>
+         </div>
+         <div class="content">
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>christmas decor</h3>
+            <div class="price">$29.99 <span>$39.99</span></div>
+         </div>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="900">
+         <div class="image">
+            <img src="images/product-6.png" alt="">
+            <div class="icons">
+               <a href="#" class="fas fa-shopping-cart"></a>
+               <a href="#" class="fas fa-heart"></a>
+               <a href="#" class="fas fa-search"></a>
+            </div>
+         </div>
+         <div class="content">
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>christmas decor</h3>
+            <div class="price">$29.99 <span>$39.99</span></div>
+         </div>
+      </div>
+
+   </div>
 
 </section>
 
-<!-- review section starts  -->
+<!-- products section ends -->
 
-<section class="review" id="review">
+<!-- services section starts  -->
 
-    <h1 class="heading"> Отзывы <span>клиентов</span> </h1>
+<section class="services" id="services">
 
-    <div class="box-container">
+   <h1 class="heading"> our <span>services</span> </h1>
 
-        <div class="box">
-            <img src="images/quote-img.webp" alt="" class="quote" width="58" height="43">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
-            <img src="images/pic-1.webp" class="user" alt="" width="192" height="190">
-            <h3>john deo</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-        </div>
+   <div class="box-container">
 
-        <div class="box">
-            <img src="images/quote-img.webp" alt="" class="quote" width="58" height="43">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
-            <img src="images/pic-2.webp" class="user" alt="" width="192" height="190">
-            <h3>john deo</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-        </div>
-        
-        <div class="box">
-            <img src="images/quote-img.webp" alt="" class="quote" width="58" height="43">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
-            <img src="images/pic-3.webp" class="user" alt="" width="192" height="190">
-            <h3>john deo</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-        </div>
+      <div class="box" class="box" data-aos="fade-up" data-aos-delay="150">
+         <i class="fas fa-tree"></i>
+         <h3>christmas tree</h3>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, doloribus!</p>
+      </div>
 
-    </div>
+      <div class="box" class="box" data-aos="fade-up" data-aos-delay="300">
+         <i class="fas fa-cookie"></i>
+         <h3>christmas cookies</h3>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, doloribus!</p>
+      </div>
+
+      <div class="box" class="box" data-aos="fade-up" data-aos-delay="450">
+         <i class="fas fa-snowman"></i>
+         <h3>christmas snowman</h3>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, doloribus!</p>
+      </div>
+
+      <div class="box" class="box" data-aos="fade-up" data-aos-delay="600">
+         <i class="fas fa-gifts"></i>
+         <h3>christmas gifts</h3>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, doloribus!</p>
+      </div>
+
+      <div class="box" class="box" data-aos="fade-up" data-aos-delay="750">
+         <i class="fas fa-candy-cane"></i>
+         <h3>christmas candy</h3>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, doloribus!</p>
+      </div>
+
+      <div class="box" class="box" data-aos="fade-up" data-aos-delay="900">
+         <i class="fas fa-sleigh"></i>
+         <h3>christmas sleigh</h3>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, doloribus!</p>
+      </div>
+
+   </div>
 
 </section>
 
-<!-- review section ends -->
+<!-- services section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+   <h1 class="heading"> our <span>gallery</span> </h1>
+
+   <div class="box-container">
+      <img class="box" data-aos="zoom-in" data-aos-delay="150" src="images/g-img-1.jpg" alt="">
+      <img class="box" data-aos="zoom-in" data-aos-delay="300" src="images/g-img-2.jpg" alt="">
+      <img class="box" data-aos="zoom-in" data-aos-delay="450" src="images/g-img-3.jpg" alt="">
+      <img class="box" data-aos="zoom-in" data-aos-delay="600" src="images/g-img-4.jpg" alt="">
+      <img class="box" data-aos="zoom-in" data-aos-delay="750" src="images/g-img-5.jpg" alt="">
+      <img class="box" data-aos="zoom-in" data-aos-delay="900" src="images/g-img-6.jpg" alt="">
+      <img class="box" data-aos="zoom-in" data-aos-delay="1050" src="images/g-img-7.jpg" alt="">
+      <img class="box" data-aos="zoom-in" data-aos-delay="1200" src="images/g-img-8.jpg" alt="">
+      <img class="box" data-aos="zoom-in" data-aos-delay="1350" src="images/g-img-9.jpg" alt="">
+   </div>
+
+</section>
+
+<!-- gallery section ends -->
 
 <!-- contact section starts  -->
 
 <section class="contact" id="contact">
 
-    <h1 class="heading"> <span>Контакт</span> </h1>
-
-    <div class="row">
-
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1629452077891!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
-
-        <form action="">
-            <h3>обращайтесь</h3>
-            <div class="inputBox">
-                <span class="fas fa-user"></span>
-                <input type="text" placeholder="Имя">
-            </div>
-            <div class="inputBox">
-                <span class="fas fa-envelope"></span>
-                <input type="email" placeholder="Почта">
-            </div>
-            <div class="inputBox">
-                <span class="fas fa-phone"></span>
-                <input type="number" placeholder="Телефон">
-            </div>
-            <input type="submit" value="contact now" class="btn">
-        </form>
-
-    </div>
+   <form action="">
+      <h3 data-aos="fade-up" data-aos-delay="150">contact us</h3>
+      <input data-aos="fade-up" data-aos-delay="300" type="text" placeholder="full name" class="box">
+      <input data-aos="fade-up" data-aos-delay="450" type="email" placeholder="email" class="box">
+      <input data-aos="fade-up" data-aos-delay="600" type="number" placeholder="phone" class="box">
+      <textarea data-aos="fade-up" data-aos-delay="750" name="" placeholder="message" class="box" id="" cols="30" rows="10"></textarea>
+      <input data-aos="fade-up" data-aos-delay="900" type="submit" value="send now" class="btn">
+   </form>
 
 </section>
 
 <!-- contact section ends -->
 
-<!-- blogs section starts  -->
+<!-- blogs sections starts  -->
 
 <section class="blogs" id="blogs">
 
-    <h1 class="heading"> Наш <span>Блог</span> </h1>
+   <h1 class="heading"> our <span>blogs</span> </h1>
 
-    <div class="box-container">
+   <div class="box-container">
 
-        <div class="box">
-            <div class="image">
-                <img src="images/blog-1.webp" alt="" width="370" height="240">
+      <div class="box" data-aos="fade-up" data-aos-delay="150">
+         <div class="images">
+            <img src="images/blog-1.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>blog title goes here</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, mollitia?</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+               <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2022 </a>
+               <a href="#"> <i class="fas fa-user"></i> by admin </a>
             </div>
-            <div class="content">
-                <a href="#" class="title">вкусный и освежающий кофе</a>
-                <span>by Vadim / 2022</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
-                <a href="#" class="btn">читать далее</a>
-            </div>
-        </div>
+         </div>
+      </div>
 
-        <div class="box">
-            <div class="image">
-                <img src="images/blog-2.webp" alt="" width="370" height="240">
+      <div class="box" data-aos="fade-up" data-aos-delay="300">
+         <div class="images">
+            <img src="images/blog-2.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>blog title goes here</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, mollitia?</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+               <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2022 </a>
+               <a href="#"> <i class="fas fa-user"></i> by admin </a>
             </div>
-            <div class="content">
-                <a href="#" class="title">tasty and refreshing coffee</a>
-                <span>by Vadim / 21st may, 2021</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
-                <a href="#" class="btn">читать далее</a>
-            </div>
-        </div>
+         </div>
+      </div>
 
-        <div class="box">
-            <div class="image">
-                <img src="images/blog-3.webp" alt="" width="370" height="240">
+      <div class="box" data-aos="fade-up" data-aos-delay="450">
+         <div class="images">
+            <img src="images/blog-3.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>blog title goes here</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, mollitia?</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+               <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2022 </a>
+               <a href="#"> <i class="fas fa-user"></i> by admin </a>
             </div>
-            <div class="content">
-                <a href="#" class="title">tasty and refreshing coffee</a>
-                <span>by Vadim / 21st may, 2021</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
-                <a href="#" class="btn">читать далее</a>
-            </div>
-        </div>
+         </div>
+      </div>
 
-    </div>
+   </div>
 
 </section>
 
-<!-- blogs section ends -->
+<!-- blogs sections ends -->
 
 <!-- footer section starts  -->
 
 <section class="footer">
 
-    <div class="share">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-linkedin"></a>
-        <a href="#" class="fab fa-pinterest"></a>
-    </div>
+   <div class="box-container">
 
-    <div class="links">
-        <a href="#">home</a>
-        <a href="#">about</a>
-        <a href="#">menu</a>
-        <a href="#">products</a>
-        <a href="#">review</a>
-        <a href="#">contact</a>
-        <a href="#">blogs</a>
-    </div>
+      <div class="box" data-aos="fade-up" data-aos-delay="150">
+         <h3>quick links</h3>
+         <a class="link" href="#home"> <i class="fas fa-angle-right"></i> home</a>
+         <a class="link" href="#about"> <i class="fas fa-angle-right"></i> about</a>
+         <a class="link" href="#products"> <i class="fas fa-angle-right"></i> products</a>
+         <a class="link" href="#services"> <i class="fas fa-angle-right"></i> services</a>
+         <a class="link" href="#gallery"> <i class="fas fa-angle-right"></i> gallery</a>
+         <a class="link" href="#contact"> <i class="fas fa-angle-right"></i> contact</a>
+         <a class="link" href="#blogs"> <i class="fas fa-angle-right"></i> blogs</a>
+      </div>
 
-    <div class="credit">created by <span>Vadim</span> | all rights reserved</div>
+      <div class="box" data-aos="fade-up" data-aos-delay="300">
+         <h3>extra links</h3>
+         <a class="link" href="#"> <i class="fas fa-angle-right"></i> my order </a>
+         <a class="link" href="#"> <i class="fas fa-angle-right"></i> my wishlist </a>
+         <a class="link" href="#"> <i class="fas fa-angle-right"></i> my favorite </a>
+         <a class="link" href="#"> <i class="fas fa-angle-right"></i> terms or use </a>
+         <a class="link" href="#"> <i class="fas fa-angle-right"></i> privacy policy </a>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="450">
+         <h3>contact info</h3>
+         <a class="link" href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+         <a class="link" href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+         <a class="link" href="#"> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </a>
+         <a class="link" href="#"> <i class="fas fa-envelope"></i> anasbhai@gmail.com </a>
+         <a class="link" href="#"> <i class="fas fa-map"></i> mumbai, india - 400104 </a>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="600">
+         <h3>newsletter</h3>
+         <form action="">
+            <input type="email" name="" placeholder="enter your email" class="email" id="">
+            <input type="submit" value="subscribe" class="btn">
+         </form>
+         <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+         </div>
+      </div>
+
+   </div>
+
+   <p class="credit"> created by <span>mr. web designer</span> | all rights reserved! </p>
 
 </section>
 
@@ -428,18 +444,18 @@
 
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-
-
-
-
-
-
-
-
-
-<!-- custom js file link  -->
+<!-- custom js file link     -->
 <script src="js/script.js"></script>
 
+<script>
+
+   AOS.init({
+      duration:800,
+   });
+
+</script>
+   
 </body>
 </html>
