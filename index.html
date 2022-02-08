@@ -1,244 +1,478 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <meta name="description" content="Документация библиотеки smart-grid. Код и примеры использования примеси debug.">
-   <title>Smart Grid - описание примеси debug</title>
-   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-   <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Halloween E-Commerce Website Design</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-   <div id="app">
-      <div class="box__2ed1142"></div>
-      <header class="header bg-primary">
-         <div class="sg-wrapper">
-            <div class="sg-row-flex headerRow"><a class="headerCol logo" href="/">
-                  <div class="title">smart-grid</div>
-                  <div>препроцессорная сетка для web</div>
-               </a>
-               <div class="headerCol menu-header">
-                  <ul class="tab list-in-tab menu-header-list">
-                     <li class="menu-header-item tab-item"><a href="/?page=index">Начало работы</a></li>
-                     <li class="menu-header-item tab-item"><a href="/?page=gallery">Настройки сетки</a></li>
-                     <li class="menu-header-item tab-item active"><a href="/mixins">Примеси</a></li>
-                  </ul>
-               </div>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-ghost"></i> logo </a>
+
+    <nav class="navbar">
+        <a href="#home" class="active">home</a>
+        <a href="#products">products</a>
+        <a href="#about">about</a>
+        <a href="#arrivals">arrivals</a>
+        <a href="#contact">contact</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-user"></a>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="search here..." id="input-box">
+        <label for="input-box" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box" style="background: url(image/home-slider-1.jpg);">
+                <div class="content">
+                    <h3>happy Halloween</h3>
+                    <p>special discount</p>
+                    <div class="button">
+                        <a href="#" class="btn">shop now</a>
+                    </div>
+                </div>
             </div>
-         </div>
-      </header>
-      <div class="content-wrapper">
-         <div class="sg-wrapper">
-            <div class="sg-row-flex">
-               <aside class="layout-aside">
-                  <nav class="nav-aside" tabindex="0"><span class="btn btn-toggle">Список примесей</span>
-                     <ul class="nav menu menu-aside">
-                        <li class="divider divider-in-menu" data-content="Типы примесей"></li>
-                        <li class="nav-item"><a href="/mixins/wireframe">Каркасные</a></li>
-                        <li class="nav-item"><a href="/mixins/rows">Строки</a></li>
-                        <li class="nav-item"><a href="/mixins/columns">Столбцы</a></li>
-                        <li class="nav-item"><a href="/mixins/shifts">Отступы</a></li>
-                        <li class="nav-item"><a href="/mixins/adaptive">Для breakPoints</a></li>
-                        <li class="nav-item active"><a href="/mixins/helpers">Вспомогательные</a>
-                           <ul class="nav menu submenu-left">
-                              <li class="nav-item"><a href="/mixins/helpers/reset">reset</a></li>
-                              <li class="nav-item active"><a href="/mixins/helpers/debug">debug</a></li>
-                              <li class="nav-item"><a href="/mixins/helpers/from">from</a></li>
-                              <li class="nav-item"><a href="/mixins/helpers/to">to</a></li>
-                              <li class="nav-item"><a href="/mixins/helpers/from-to">from-to</a></li>
-                              <li class="nav-item"><a href="/mixins/helpers/clearfix">clearfix</a></li>
-                           </ul>
-                        </li>
-                     </ul>
-                  </nav>
-               </aside>
-               <main class="layout-content">
-                  <ul class="breadcrumb">
-                     <li class="breadcrumb-item"><a href="/mixins">Примеси</a></li>
-                     <li class="breadcrumb-item"><a href="/mixins/helpers">Вспомогательные</a></li>
-                     <li class="breadcrumb-item"><span>debug</span></li>
-                  </ul>
-                  <h1>Отладочная сетка</h1>
-                  <div class="app-content-text">
-                     <p>Нарисовать отладочную сетку поверх сайта.</p>
-                     <p><strong>Код примеси:</strong></p>
-                     <div>
-                        <div class="tab">
-                           <div class="tab-item active"><a href="#" class="link-in-tab">LESS</a></div>
-                           <div class="tab-item"><a href="#" class="link-in-tab">SCSS</a></div>
-                           <div class="tab-item"><a href="#" class="link-in-tab">Sass</a></div>
-                           <div class="tab-item"><a href="#" class="link-in-tab">Stylus</a></div>
-                        </div>
-                        <div>
-                           <div class="tabItem tabItem-active">
-                              <pre class="less code hljs" data-lang="less"><code>
-<span class="hljs-selector-class">.debug</span>(<span class="hljs-variable">@background</span>, <span class="hljs-variable">@outline</span>){
-   <span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>;
-   <span class="hljs-attribute">position</span>: fixed;
-   <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-   
-   &gt; <span class="hljs-selector-tag">div</span>{
-      <span class="hljs-attribute">height</span>: inherit;
-      <span class="hljs-selector-class">.wrapper</span>();
-      
-      &gt; <span class="hljs-selector-tag">div</span>{
-         <span class="hljs-attribute">height</span>: inherit;
-         <span class="hljs-selector-class">.row-flex</span>();
-         
-         &gt; <span class="hljs-selector-tag">div</span>{
-            <span class="hljs-selector-class">.col</span>();
-            <span class="hljs-selector-class">.size</span>(<span class="hljs-number">1</span>);
-            <span class="hljs-attribute">height</span>: inherit;
-            <span class="hljs-attribute">outline</span>: <span class="hljs-variable">@outline</span>;
-            <span class="hljs-attribute">background</span>: <span class="hljs-variable">@background</span>;
-         }
-      }
-   }
-}</code></pre>
-                           </div>
-                           <div class="tabItem">
-                              <pre class="scss code hljs" data-lang="scss"><code>
-@<span class="hljs-keyword">mixin</span> debug(<span class="hljs-variable">$background</span>, <span class="hljs-variable">$outline</span>){
-   <span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>;
-   <span class="hljs-attribute">position</span>: fixed;
-   <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-   
-   &gt; <span class="hljs-selector-tag">div</span>{
-      <span class="hljs-attribute">height</span>: inherit;
-      @<span class="hljs-keyword">include</span> wrapper();
-      
-      &gt; <span class="hljs-selector-tag">div</span>{
-         <span class="hljs-attribute">height</span>: inherit;
-         @<span class="hljs-keyword">include</span> row-flex();
-         
-         &gt; <span class="hljs-selector-tag">div</span>{
-            @<span class="hljs-keyword">include</span> col();
-            @<span class="hljs-keyword">include</span> size(<span class="hljs-number">1</span>);
-            <span class="hljs-attribute">height</span>: inherit;
-            <span class="hljs-attribute">outline</span>: <span class="hljs-variable">$outline</span>;
-            <span class="hljs-attribute">background</span>: <span class="hljs-variable">$background</span>;
-         }
-      }
-   }
-}</code></pre>
-                           </div>
-                           <div class="tabItem">
-                              <pre class="sass code hljs" data-lang="sass"><code>
-=debug(<span class="hljs-variable">$background</span>, <span class="hljs-variable">$outline</span>)
-   <span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>
-   position: fixed
-   width: <span class="hljs-number">100%</span>
-   
-   &gt; div
-      height: inherit
-      +wrapper()
-      
-      &gt; div
-         height: inherit
-         +row-flex()
-         
-         &gt; div
-            +col()
-            +size(<span class="hljs-number">1</span>)
-            height: inherit
-            outline: <span class="hljs-variable">$outline</span>
-            background: <span class="hljs-variable">$background</span>
-         
-      
-   
-</code></pre>
-                           </div>
-                           <div class="tabItem">
-                              <pre class="stylus code hljs" data-lang="stylus"><code>
-<span class="hljs-function"><span class="hljs-title">debug</span><span class="hljs-params">(<span class="hljs-variable">$background</span>, <span class="hljs-variable">$outline</span>)</span></span>
-   <span class="hljs-attribute">height</span> <span class="hljs-number">100vh</span>
-   <span class="hljs-attribute">position</span> fixed
-   <span class="hljs-attribute">width</span> <span class="hljs-number">100%</span>
-   
-   &gt; <span class="hljs-selector-tag">div</span>
-      <span class="hljs-attribute">height</span> inherit
-      wrapper()
-      
-      &gt; <span class="hljs-selector-tag">div</span>
-         <span class="hljs-attribute">height</span> inherit
-         row-<span class="hljs-attribute">flex</span>()
-         
-         &gt; <span class="hljs-selector-tag">div</span>
-            col()
-            size(<span class="hljs-number">1</span>)
-            <span class="hljs-attribute">height</span> inherit
-            <span class="hljs-attribute">outline</span> <span class="hljs-variable">$outline</span>
-            <span class="hljs-attribute">background</span> <span class="hljs-variable">$background</span>
-         
-      
-   
-</code></pre>
-                           </div>
-                        </div>
-                     </div>
-                     <p>Разумеется, в HTML придётся добавить небольшую группу элементов:</p>
-                     <pre class="html code hljs" data-lang="html"><code>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"degub-grid"</span>&gt;</span>
-   <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-         <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-         ...
-         <span class="hljs-comment">&lt;!-- столько же, сколько столбцов в сетке --&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-                     <p>У этой структуры следующее назначение:</p>
-                     <ul>
-                        <li>внешний div растягивается на 100% ширины и высоты экрана</li>
-                        <li>второй div - контейнер</li>
-                        <li>третий div - строка</li>
-                        <li>вложенные div - столбцы, их количество должно совпадать с количеством колонок сетки</li>
-                     </ul>
-                     <p>Далее применяем примесь debug к внешнему div, например:</p>
-                     <div>
-                        <div class="tab">
-                           <div class="tab-item active"><a href="#" class="link-in-tab">LESS</a></div>
-                           <div class="tab-item"><a href="#" class="link-in-tab">SCSS</a></div>
-                           <div class="tab-item"><a href="#" class="link-in-tab">Sass</a></div>
-                           <div class="tab-item"><a href="#" class="link-in-tab">Stylus</a></div>
-                        </div>
-                        <div>
-                           <div class="tabItem tabItem-active">
-                              <pre class="less code hljs" data-lang="less"><code>
-<span class="hljs-selector-class">.degub-grid</span>{
-   <span class="hljs-selector-class">.debug</span>(rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.5</span>), <span class="hljs-number">1px</span> solid <span class="hljs-number">#ff0</span>);
-}</code></pre>
-                           </div>
-                           <div class="tabItem">
-                              <pre class="scss code hljs" data-lang="scss"><code>
-<span class="hljs-selector-class">.degub-grid</span>{
-   @<span class="hljs-keyword">include</span> debug(rgba(<span class="hljs-number">0</span>, 0, 0, 0.5), 1px solid <span class="hljs-number">#ff0</span>);
-}</code></pre>
-                           </div>
-                           <div class="tabItem">
-                              <pre class="sass code hljs" data-lang="sass"><code>
-<span class="hljs-selector-class">.degub-grid</span>
-   +debug(rgba(0, 0, 0, 0<span class="hljs-selector-class">.5</span>), 1px solid <span class="hljs-selector-id">#ff0</span>)
-</code></pre>
-                           </div>
-                           <div class="tabItem">
-                              <pre class="stylus code hljs" data-lang="stylus"><code>
-<span class="hljs-selector-class">.degub-grid</span>
-   debug(rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.5</span>), <span class="hljs-number">1px</span> solid <span class="hljs-number">#ff0</span>)
-</code></pre>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </main>
+
+            <div class="swiper-slide box" style="background: url(image/home-slider-2.jpg);">
+                <div class="content">
+                    <h3>upto 30% off</h3>
+                    <p>on all costumes</p>
+                    <div class="button">
+                        <a href="#" class="btn">shop now</a>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-      <footer class="footer bg-primary">
-         <div class="sg-wrapper">Smart Grid For Web Sites © Dmitrii Lavrik</div>
-      </footer>
-   </div>
-   <!--asyncCss-->
+
+            <div class="swiper-slide box" style="background: url(image/home-slider-3.jpg);">
+                <div class="content">
+                    <h3>limited offer</h3>
+                    <p>don't miss it</p>
+                    <div class="button">
+                        <a href="#" class="btn">shop now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- products section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> our <span>products</span> </h1>
+
+    <div class="swiper products-slider" data-aos="zoom-in">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                <div class="image">
+                    <img src="image/product-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>latest products</h3>
+                    <div class="price"> $79.99 <span>$95.99</span> </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                <div class="image">
+                    <img src="image/product-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>latest products</h3>
+                    <div class="price"> $79.99 <span>$95.99</span> </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                <div class="image">
+                    <img src="image/product-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>latest products</h3>
+                    <div class="price"> $79.99 <span>$95.99</span> </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                <div class="image">
+                    <img src="image/product-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>latest products</h3>
+                    <div class="price"> $79.99 <span>$95.99</span> </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                <div class="image">
+                    <img src="image/product-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>latest products</h3>
+                    <div class="price"> $79.99 <span>$95.99</span> </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- products section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="content" data-aos="fade-right">
+        <h3>about us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, adipisci neque! Veritatis laboriosam odio corporis, quo fugit architecto. Veritatis in dicta qui odit soluta sequi ipsam facere eum numquam! Obcaecati.</p>
+        <a href="#" class="btn">read more</a>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- arrivals section starts  -->
+
+<section class="arrivals" id="arrivals">
+
+    <h1 class="heading"> new <span>arrivals</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-right">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+            <div class="image">
+                <img src="image/arrival-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>latest products</h3>
+                <div class="price"> $79.99 <span>$95.99</span> </div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-down">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+            <div class="image">
+                <img src="image/arrival-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>latest products</h3>
+                <div class="price"> $79.99 <span>$95.99</span> </div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+            <div class="image">
+                <img src="image/arrival-3.gif" alt="">
+            </div>
+            <div class="content">
+                <h3>latest products</h3>
+                <div class="price"> $79.99 <span>$95.99</span> </div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-right">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+            <div class="image">
+                <img src="image/arrival-4.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>latest products</h3>
+                <div class="price"> $79.99 <span>$95.99</span> </div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-down">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+            <div class="image">
+                <img src="image/arrival-5.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>latest products</h3>
+                <div class="price"> $79.99 <span>$95.99</span> </div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+            <div class="image">
+                <img src="image/arrival-6.gif" alt="">
+            </div>
+            <div class="content">
+                <h3>latest products</h3>
+                <div class="price"> $79.99 <span>$95.99</span> </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- arrivals section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <div class="row">
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1632569975602!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+
+        <form action="">
+            <h3 data-aos="zoom-in">tell us something!</h3>
+            <input data-aos="zoom-in" type="text" placeholder="your name" class="box">
+            <input data-aos="zoom-in" type="email" placeholder="your email" class="box">
+            <input data-aos="zoom-in" type="number" placeholder="your number" class="box">
+            <textarea data-aos="zoom-in" placeholder="your message" class="box" cols="30" rows="10"></textarea>
+            <input data-aos="zoom-in" type="submit" value="send message" class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our <span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-right">
+            <div class="image">
+                <img src="image/blog-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Believe in the Magic of Halloween.</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, harum!</p>
+                <a href="#" class="btn">read more</a>
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-down">
+            <div class="image">
+                <img src="image/blog-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Believe in the Magic of Halloween.</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, harum!</p>
+                <a href="#" class="btn">read more</a>
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <div class="image">
+                <img src="image/blog-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Believe in the Magic of Halloween.</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, harum!</p>
+                <a href="#" class="btn">read more</a>
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-right">
+            <h3>our branches</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> russia </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> japan </a>
+        </div>
+
+        <div class="box" data-aos="fade-down">
+            <h3>quick links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> products </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> about </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> arrivals </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> contact </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <h3>contact us</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> mumbai, india - 400104 </a>
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <h3>contact us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span>mr. web designer</span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file links  -->
+<script src="js/script.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+      delay:400,
+      duration:800
+  });
+</script>
+
 </body>
 </html>
